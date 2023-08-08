@@ -1,0 +1,499 @@
+body {
+    background-color: rgba(245, 240, 237, 1);
+}
+
+.main-body {
+    height: 2010px;
+    overflow: hidden;
+    font-family: Inter;
+    font-stretch: normal;
+    text-decoration: none;
+    height: auto;
+}
+
+
+.page-heading {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 32px;
+    font-style: Bold;
+
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+}
+
+.header {
+    padding: 24px 32px;
+    align-items: center;
+    border-radius: 0 0 16px 16px;
+    background-color: black;
+}
+
+.main-logo {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.header-heading-text {
+    color: rgba(252, 110, 42, 1);
+    font-size: 24px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+
+}
+
+.download-button {
+    gap: 8px;
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: rgb(247 80 0);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: rgb(247 80 0);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.welcome {
+    gap: 24px;
+}
+
+
+.main-card {
+    gap: 16px;
+    display: flex;
+    padding: 40px 32px;
+    overflow: hidden;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 16px 16px 0 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.card {
+    gap: 16px;
+    display: flex;
+    padding: 40px 32px;
+    overflow: hidden;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 0 0 16px 16px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    margin-top: 5px;
+}
+
+.cardSpendingDetails {
+    gap: 16px;
+    display: flex;
+    padding: 40px 32px;
+    overflow: hidden;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 16px 16px 16px 16px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    margin-top: 5px;
+}
+
+.card-heading {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 24px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 40px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.card-text {
+    color: rgba(85, 85, 85, 1);
+    height: auto;
+    font-size: 20px;
+    align-self: stretch;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 32px;
+
+
+}
+
+.spentText {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 32px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 40px;
+
+}
+
+.txtNormal {
+    color: rgba(102, 102, 102, 1);
+    height: auto;
+    font-size: 16px;
+    font-style: Regular;
+    font-weight: 400;
+    line-height: 16px;
+
+}
+
+.txtAmount {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 24px;
+
+
+}
+
+.amountBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.paynowButton {
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: rgb(247 80 0);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.paynowButton:hover {
+    background-color: rgb(247 80 0);
+    color: rgba(255, 255, 255, 1);
+}
+
+.remindMeLaterButton {
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: rgb(237 228 223);
+    color: rgb(0 0 0);
+    font-size: 16px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.remindMeLaterButton:hover {
+    background-color: rgb(237 228 223);
+    color: rgb(0 0 0);
+}
+
+.main-information {
+    gap: 24px;
+    align-items: flex-start;
+    border-radius: 16px;
+    flex-direction: column;
+    background-image: linear-gradient(168deg, rgba(255, 245, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.information-box {
+    gap: 8px;
+    display: flex;
+    padding: 16px;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 12px;
+    flex-direction: column;
+}
+
+.main-informationheading {
+    gap: 8px;
+    display: flex;
+    padding: 8px;
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    flex-grow: 1;
+    font-size: 20px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.main-informationbody {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: linear-gradient(227deg, rgba(0, 43, 187, 0.65) 0%, rgba(156, 51, 18, 0.65) 100%), linear-gradient(0deg, #7E726A 0%, #7E726A 100%), #FFF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.green-text {
+    color: #15E367;
+    font-weight: 600;
+}
+
+.white-text {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.main-rewards {
+    display: flex;
+    padding: 16px;
+    overflow: hidden;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 16px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+.sideBarHeading {
+    font-size: 20px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rewards-body {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-self: stretch;
+    box-shadow: 10px 40px 64px 12px rgba(245, 240, 237, 0.05999999865889549);
+    align-items: flex-start;
+    border-radius: 12px;
+    background-color: rgba(100, 81, 157, 1);
+    margin-top: 20px;
+}
+
+.main-frame05 {
+    display: flex;
+    opacity: 0.06;
+    align-items: flex-start;
+    flex-shrink: 1;
+}
+
+.txtBig {
+    color: rgb(255 255 255);
+
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 32px;
+
+}
+
+.txtSmall {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    opacity: 0.80;
+    font-size: 16px;
+    font-style: Medium;
+    text-align: left;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.txtPosition {
+    gap: 4px;
+    padding-top: 24px;
+    padding-left: 22px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.txtmini {
+
+    padding-top: 64px;
+    padding-left: 186px;
+    color: rgba(255, 255, 255, 1);
+
+    position: absolute;
+    font-size: 12px;
+    font-style: Medium;
+    text-align: right;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.btnBrowseRewards {
+    color: rgba(247, 80, 0, 1);
+    font-size: 16px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.btnBrowseRewards:hover {
+    color: rgba(247, 80, 0, 1);
+}
+
+.txt {
+    color: rgba(247, 80, 0, 1);
+    font-size: 16px;
+    font-style: Regular;
+    text-align: left;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main-offers {
+    display: flex;
+    padding: 16px;
+    overflow: hidden;
+    align-self: stretch;
+    align-items: flex-start;
+    border-radius: 16px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.imageBox {
+    width: 104px;
+    height: 104px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: rgba(245, 240, 237, 1);
+}
+
+.claimOffer {
+    color: rgba(247, 80, 0, 1);
+    height: auto;
+    font-size: 16px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    font-stretch: normal;
+}
+
+.progress {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.barText {
+    position: absolute;
+    padding-left: 12px;
+}
+
+.barAmount {
+    width: 100%;
+    text-align: right;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    font-style: Regular;
+    text-align: right;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav-item {
+    background-color: rgb(237 228 223) !important;
+    border-radius: 10px;
+}
+
+.nav-item a {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.nav-link.active {
+    color: rgba(247, 80, 0, 1) !important;
+}
+
+.nav-link.active span {
+    background: white;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+
+.nav-link {
+    background-color: rgb(237 228 223) !important;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 600;
+    background-color: rgb(237 228 223) !important;
+    border-radius: 0px;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0px;
+}
