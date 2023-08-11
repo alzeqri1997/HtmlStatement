@@ -16,28 +16,33 @@
 
 <body>
     <div class="main-body container">
-        <div class="row  header">
-            <div class="col-md-2">
-                <div class="main-logo">
-                    <img src="./assets/logo.png" alt="sohar">
+        <div class="d-flex gap-3 justify-content-between align-items-center flex-wrap header">
+            <div class="d-flex gap-4 align-items-center" >
+                    <div class="main-logo">
+                        <img src="./assets/logo.png" alt="sohar">
+                    </div>
+                    <div class="horizontal-divider"></div>
+
+                <div class=" header-heading-text">
+                    <span>Interactive Statement</span> <span>July 2024</span>
                 </div>
             </div>
-            <div class="col-md-8 header-heading-text">
-                <span>Interactive Statement</span> <span>July 2023</span>
-            </div>
-            <div class="col-md-2">
-                <button class="btn download-button">Download Button</button>
+            <div class="">
+                <button class="btn primaryBtn">Download Statement <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C10.4142 3 10.75 3.33579 10.75 3.75V14.5142L13.736 11.7038C14.0376 11.42 14.5123 11.4343 14.7962 11.736C15.08 12.0376 15.0657 12.5123 14.764 12.7962L10.514 16.7962C10.2252 17.068 9.77477 17.068 9.48598 16.7962L5.23598 12.7962C4.93435 12.5123 4.91996 12.0376 5.20385 11.736C5.48774 11.4343 5.9624 11.42 6.26403 11.7038L9.25 14.5142V3.75C9.25 3.33579 9.58579 3 10 3Z" fill="#EDE4DF"/>
+                    </svg>
+                    </button>
             </div>
         </div>
-        <div class="row  py-4">
+        <div class="row py-4">
             <div class="col-md-12">
                 <div class="page-heading">
                     <span>Welcome Gabriel!</span>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row px-3 position-relative z-1">
+            <div class="col-md-8 px-0">
                 <div class="main-card">
                     <div class="card-heading">
                         Monthly Summary
@@ -50,50 +55,51 @@
                         🌞⏳⏱️ from now.
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-heading">
-                        Your card details
-                    </div>
-                    <div class="card-text"><span class="txtNormal">Total spent</span><br>
-                        <span class="spentText">252.500 BD</span>
-                    </div>
+                <div class="card card-details">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="row gy-5">
-                                    <div class="col-md-6">
+                        <div class="row ">
+                            <div class="col-md-7">
+                                <div class="card-heading">
+                                    Your card details
+                                </div>
+                                <div class="card-text"><span class="txtNormal">Total spent</span><br>
+                                    <span class="spentText">252.500 BD</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
                                         <div class="amountBox">
                                             <span class="txtNormal">Credit limit</span>
                                             <span class="txtAmount">300.000 BD</span>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 mb-4">
                                         <div class="amountBox">
                                             <span class="txtNormal">Available balance</span>
                                             <span class="txtAmount">50.000 BD</span>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 mb-4">
                                         <div class="amountBox">
                                             <span class="txtNormal">Available cash limit</span>
                                             <span class="txtAmount">10.000 BD</span>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 mb-4">
                                         <div class="amountBox">
                                             <span class="txtNormal">Minimum due</span>
                                             <span class="txtAmount">6.000 BD</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <button class="btn paynowButton">Pay Now</button>
+                                        <button class="btn primaryBtn">Pay now!</button>
                                     </div>
                                     <div class="col-md-6">
-                                        <button class="btn remindMeLaterButton">Remind me later</button>
+                                        <button class="btn third-btn w-100">Remind me later</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+
+                            <div class="col-md-5 align-self-center ">
                                 <div>
                                     <img class="img-fluid rounded " src="./assets/logo1.png">
                                 </div>
@@ -104,10 +110,8 @@
                 <div class="cardSpendingDetails">
                     <div class="card-heading">Your spending details</div>
 
-                    <div id="tabscontent" class="container">
-
-
-                        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <div id="tabscontent" class="container px-0">
+                        <ul class="nav nav-tabs justify-content-center align-items-center mb-3" id="ex1" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1"
                                     role="tab" aria-controls="ex1-tabs-1" aria-selected="true"><span>By Category</span>
@@ -122,79 +126,320 @@
                         <div class="tab-content" id="ex1-content">
                             <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
                                 aria-labelledby="ex1-tab-1">
-                                <div class="container tab-content" id="by-category">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success " role="progressbar" style="width: 30%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
-                                                class="barText">Entertainment<br><span>24 Transaction</span></span>
-
+                                <div class="category-most-spent">
+                                    This month you’ve spent the most on <span class="light-green" >entertainment</span>🥳.
+                                     A total of <strong>137.580 BD</strong> or <strong>47.33%</strong> of your total spending
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3" >
+                                    <span class="fw-bold" >Category</span>
+                                    <span class="fw-bold" >Total</span>
+                                </div>
+                                <div class="container tab-content px-0" id="by-category">
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Entertainment</span>
+                                                <span>137.580 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>24 Transactions</span>
+                                                <span>47.33%</span>
+                                            </div>
                                         </div>
-                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-green" role="progressbar" style="width: 47.33%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 55%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span
-                                                class="barText">Grocery
 
-                                                <br><span>17 Transaction</span></span></div>
-                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
-
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Grocery</span>
+                                                <span>89.230 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>17 Transactions</span>
+                                                <span>38.27%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-cyan" role="progressbar" style="width: 38.27%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span
-                                                class="barText">Medical
 
-                                                <br><span>17 Transaction</span></span></div>
-                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Medical</span>
+                                                <span>63.900 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>3 Transactions</span>
+                                                <span>27.92%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-orange" role="progressbar" style="width: 27.92%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 27%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
-                                                class="barText">Car
-                                                Service
 
-                                                <br><span>8 Transaction</span></span></div>
-                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Car service</span>
+                                                <span>28.250 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>3 Transactions</span>
+                                                <span>12.11%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-grape" role="progressbar" style="width: 12.11%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
-                                                class="barText">Other
 
-                                                <br><span>20 Transaction</span></span></div>
-                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Education</span>
+                                                <span>14.850 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>1 Transactions</span>
+                                                <span>7.33%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-blue" role="progressbar" style="width: 7.33%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
                                     </div>
+
+                                    <div class="progress w-100 position-relative d-flex align-items-center">
+                                        <div class="z-1 progress-content w-100" >
+                                            <div class="d-flex justify-content-between progress-title" >
+                                                <span>Other</span>
+                                                <span>24.480 BD</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between secondary ">
+                                                <span>32 Transactions</span>
+                                                <span>15.62%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar z-0 position-absolute top-0 left-0 h-100 bg-progress-subtle-coral" role="progressbar" style="width: 15.62%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn secondary-btn py-2 px-3 mt-3">
+                                        <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C10.4142 3 10.75 3.33579 10.75 3.75V14.5142L13.736 11.7038C14.0376 11.42 14.5123 11.4343 14.7962 11.736C15.08 12.0376 15.0657 12.5123 14.764 12.7962L10.514 16.7962C10.2252 17.068 9.77477 17.068 9.48598 16.7962L5.23598 12.7962C4.93435 12.5123 4.91996 12.0376 5.20385 11.736C5.48774 11.4343 5.9624 11.42 6.26403 11.7038L9.25 14.5142V3.75C9.25 3.33579 9.58579 3 10 3Z" fill="#F75000"/>
+                                        </svg>
+                                        View all
+                                    </button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
                                 <div class="container tab-content" id="transactions">
-                                    <table class="table">
-                                        <thead class="">
-                                            <tr>
+                                    <div class="d-flex justify-content-between align-items-center mt-3" >
+                                        <span class="fw-bold" >Date & Merchant</span>
+                                        <span class="fw-bold" >Total</span>
+                                    </div>
 
-                                                <th scope="col">Date &Merchant</th>
-                                                <th scope="col">Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>24/07/2023 <span>Careem</span></td>
-                                                <td>25 BD</td>
-                                            </tr>
-                                            <tr>
-                                                <td>25/07/2023 <span>Netflix</span></td>
-                                                <td>510 BD</td>
-                                            </tr>
-                                            <tr>
-                                                <td>23/07/2023 <span>Grandious</span></td>
-                                                <td>50 BD</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="vertical-divider"></div>
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge ">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="vertical-divider"></div>
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="vertical-divider"></div>
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-divider"></div>
+
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-divider"></div>
+
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-divider"></div>
+
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="vertical-divider"></div>
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-divider"></div>
+
+                                    <div class="d-flex justify-content-between align-items-center" >
+                                        <div class="d-flex gap-3" >
+                                            <div class="RoundedImageBox" >
+                                            </div>
+                                            <div class="d-flex flex-column" >
+                                                <span class="transaction-date" >25/07/2023</span>
+                                                <span>Kareem</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 " >
+                                            <span class="transaction-badge d-none">
+                                                Available for instalments
+                                            </span>
+                                            <span>4.329 BD</span>
+                                            <a href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.75C14 1.33579 14.3358 1 14.75 1H18.25C18.6642 1 19 1.33579 19 1.75V5.25C19 5.66421 18.6642 6 18.25 6C17.8358 6 17.5 5.66421 17.5 5.25V3.56066L11.5303 9.53033C11.2374 9.82322 10.7626 9.82322 10.4697 9.53033C10.1768 9.23744 10.1768 8.76256 10.4697 8.46967L16.4393 2.5H14.75C14.3358 2.5 14 2.16421 14 1.75ZM1 4.75C1 3.23122 2.23122 2 3.75 2H9C9.41421 2 9.75 2.33579 9.75 2.75C9.75 3.16421 9.41421 3.5 9 3.5H3.75C3.05964 3.5 2.5 4.05964 2.5 4.75V16.25C2.5 16.9404 3.05964 17.5 3.75 17.5H15.25C15.9404 17.5 16.5 16.9404 16.5 16.25V11C16.5 10.5858 16.8358 10.25 17.25 10.25C17.6642 10.25 18 10.5858 18 11V16.25C18 17.7688 16.7688 19 15.25 19H3.75C2.23122 19 1 17.7688 1 16.25V4.75Z" fill="#999999"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-divider"></div>
+
+                                    <button class="btn secondary-btn py-2 px-3 mt-3">
+                                        <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C10.4142 3 10.75 3.33579 10.75 3.75V14.5142L13.736 11.7038C14.0376 11.42 14.5123 11.4343 14.7962 11.736C15.08 12.0376 15.0657 12.5123 14.764 12.7962L10.514 16.7962C10.2252 17.068 9.77477 17.068 9.48598 16.7962L5.23598 12.7962C4.93435 12.5123 4.91996 12.0376 5.20385 11.736C5.48774 11.4343 5.9624 11.42 6.26403 11.7038L9.25 14.5142V3.75C9.25 3.33579 9.58579 3 10 3Z" fill="#F75000"/>
+                                        </svg>
+                                        Learn More
+                                    </button>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -203,25 +448,46 @@
 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ps-3 pe-0">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 mb-3">
                         <div class="main-information">
                             <div class="information-box">
-                                <div class="main-informationheading">Did you know?</div>
-                                <div class="main-informationbody"><span>You can <span class="green-text">use Equated
-                                            Monthly
-                                            Installments (EMI)
-                                            conversion</span>, for transactions above <span class="white-text">BHD
-                                            1,500</span> on your
-                                        Credit Card and
-                                        make
-                                        hassle-free repayments.</span></div>
+                                <div class="main-informationheading">
+                                    <div>Did you know?</div>
+                                    <div>
+                                        <svg class="opacity-50" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.9168 6.24462C10.2788 6.58529 10.296 7.15487 9.95536 7.51683L6.58296 11.1H19.5C19.997 11.1 20.4 11.5029 20.4 12C20.4 12.4971 19.997 12.9 19.5 12.9H6.58296L9.95536 16.4832C10.296 16.8451 10.2788 17.4147 9.9168 17.7554C9.55485 18.096 8.98526 18.0788 8.6446 17.7168L3.8446 12.6168C3.51844 12.2703 3.51844 11.7297 3.8446 11.3832L8.6446 6.28317C8.98526 5.92122 9.55485 5.90396 9.9168 6.24462Z" fill="black"/>
+                                            </svg>
+                                            
+                                        <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0831 6.24462C14.4451 5.90396 15.0147 5.92122 15.3554 6.28317L20.1554 11.3832C20.4815 11.7297 20.4815 12.2703 20.1554 12.6168L15.3554 17.7168C15.0147 18.0788 14.4451 18.096 14.0831 17.7554C13.7212 17.4147 13.7039 16.8451 14.0446 16.4832L17.417 12.9H4.49998C4.00292 12.9 3.59998 12.4971 3.59998 12C3.59998 11.5029 4.00292 11.1 4.49998 11.1H17.417L14.0446 7.51683C13.7039 7.15487 13.7212 6.58529 14.0831 6.24462Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="main-informationbody">
+                                    <div class="main-informationbody-wrap">
+                                        <span class="d-block mb-3" >You can <span class="green-text">use Equated
+                                                Monthly
+                                                Installments (EMI)
+                                                conversion</span>, for transactions above <strong >BHD
+                                                1,500</strong> on your
+                                            Credit Card and
+                                            make
+                                            hassle-free repayments.
+                                        </span>
 
+                                        <a href="#" class="btn secondary-btn bg-white py-1 px-3 border-0 text-decoration-none ">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 py-4">
+
+
+                    <div class="col-md-12 pb-3">
                         <div class="main-rewards">
 
                             <div class="rewards-header">
@@ -232,70 +498,85 @@
                             </div>
 
                             <div class="rewards-body ">
-                                <div class="txtPosition">
-                                    <span class="txtBig">2560 Points</span>
-                                    <span class="txtSmall">25.60 BD</span>
-
-                                </div>
-                                <span class="txtmini">How to redeem your points?</span>
-                                <div class="main-frame-pasteyour-patternhere">
-                                    <div class="main-frame05">
-                                        <img alt="VectorI146" src="" class="main-vector156">
-                                        <img alt="VectorI146" src="./assets/vectori146-3qk4.svg" class="main-vector157">
-                                        <img alt="VectorI146" src="./assets/vectori146-voay.svg" class="main-vector158">
+                                <div class="position-relative z-1" >
+                                    <h2 class="txtBig">2560 Points</h2>
+                                    <div class="txtPosition">
+                                        <span class="txtSmall">25.60 BD</span>
+                                        <a href="#" class="txtmini">How to redeem your points?</a>
                                     </div>
                                 </div>
-                                <img alt="Noise1466" src="./assets/noise1466-abwp-200h.png" class="main-noise1">
+                                <div class="background-card z-0"></div>
 
                             </div>
-                            <div class="rewards-footer py-4">
-                                <button class="btn btnBrowseRewards">Browse all rewards</button>
-                                <span class="txt">How to win points</span>
+                            <div class="d-flex w-100 gap-3 align-items-center justify-content-between pt-3">
+                                <a href="#" class="py-1 px-3 fw-bold btn secondary-btn">
+                                    Browse all rewards
+                                </a>
+                                <a href="#" class="txt text-decoration-none">
+                                    How to win points?
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-12 ">
 
                         <div class="main-offers container">
-                            <div class="sideBarHeading py-2">Our offers for you?</div>
-                            <span>You have unlocked new rewards that we can use next month.</span>
+                            <div class="sideBarHeading pb-2">Our offers for you?</div>
+                            <span class="sidebar-sub-heading"  >You have unlocked new rewards that we can use next month.</span>
 
-                            <div class="row py-4">
-                                <div class="col-md-4">
-                                    <div class="imageBox"></div>
-                                </div>
-                                <div class="col-md-8 px-0">
-                                    <div>
-                                        <span class="py-2">Buy any item over 100 BD in any City Center malls in Bahrain
-                                            and win 10 BD
-                                            voucher to spend.</span>
+                            <div class="mt-3" >
+                                <div class="d-flex gap-3 ">
+                                    <div class="">
+                                        <div class="imageBox"></div>
                                     </div>
-                                    <div class="claimOffer">Claim offer </div>
+                                    <div class="">
+                                        <div>
+                                            <p class="p-0 m-0 font-small ">Buy any item over 100 BD in any City Center malls in Bahrain
+                                                and win 10 BD
+                                                voucher to spend.</p>
+                                        </div>
+                                        <a href="#" class="text-orange text-decoration-none ">Claim offer <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.736 5.20385C12.0376 4.91996 12.5123 4.93435 12.7962 5.23598L16.7962 9.48598C17.068 9.77477 17.068 10.2252 16.7962 10.514L12.7962 14.764C12.5123 15.0657 12.0376 15.08 11.736 14.7962C11.4343 14.5123 11.42 14.0376 11.7038 13.736L14.5142 10.75H3.75C3.33579 10.75 3 10.4142 3 10C3 9.58579 3.33579 9.25 3.75 9.25H14.5142L11.7038 6.26403C11.42 5.9624 11.4343 5.48774 11.736 5.20385Z" fill="#F75000"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row py-4">
-                                <div class="col-md-4">
-                                    <div class="imageBox"></div>
-                                </div>
-                                <div class="col-md-8 px-0">
-                                    <div>
-                                        <span class="py-2">Get a free Meal for 2 at any Vox cinema across Bahrain</span>
+                                <div class="vertical-divider" ></div>
+                                <div class="d-flex gap-3 ">
+                                    <div class="">
+                                        <div class="imageBox"></div>
                                     </div>
-                                    <div class="claimOffer">Claim offer </div>
+                                    <div class="">
+                                        <div>
+                                            <p class="p-0 m-0 font-small ">Buy any item over 100 BD in any City Center malls in Bahrain
+                                                and win 10 BD
+                                                voucher to spend.</p>
+                                        </div>
+                                        <a href="#" class="text-orange text-decoration-none ">Claim offer <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.736 5.20385C12.0376 4.91996 12.5123 4.93435 12.7962 5.23598L16.7962 9.48598C17.068 9.77477 17.068 10.2252 16.7962 10.514L12.7962 14.764C12.5123 15.0657 12.0376 15.08 11.736 14.7962C11.4343 14.5123 11.42 14.0376 11.7038 13.736L14.5142 10.75H3.75C3.33579 10.75 3 10.4142 3 10C3 9.58579 3.33579 9.25 3.75 9.25H14.5142L11.7038 6.26403C11.42 5.9624 11.4343 5.48774 11.736 5.20385Z" fill="#F75000"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row py-4">
-                                <div class="col-md-4">
-                                    <div class="imageBox"></div>
-                                </div>
-                                <div class="col-md-8 px-0">
-                                    <div>
-                                        <span class="py-2">Earn bonus points on selected stores in City Center mall
-                                            across Bahrain.</span>
+                                <div class="vertical-divider" ></div>
+                                <div class="d-flex gap-3 ">
+                                    <div class="">
+                                        <div class="imageBox"></div>
                                     </div>
-                                    <div class="claimOffer">Claim offer </div>
+                                    <div class="">
+                                        <div>
+                                            <p class="p-0 m-0 font-small ">Buy any item over 100 BD in any City Center malls in Bahrain
+                                                and win 10 BD
+                                                voucher to spend.</p>
+                                        </div>
+                                        <a href="#" class="text-orange text-decoration-none ">Claim offer <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.736 5.20385C12.0376 4.91996 12.5123 4.93435 12.7962 5.23598L16.7962 9.48598C17.068 9.77477 17.068 10.2252 16.7962 10.514L12.7962 14.764C12.5123 15.0657 12.0376 15.08 11.736 14.7962C11.4343 14.5123 11.42 14.0376 11.7038 13.736L14.5142 10.75H3.75C3.33579 10.75 3 10.4142 3 10C3 9.58579 3.33579 9.25 3.75 9.25H14.5142L11.7038 6.26403C11.42 5.9624 11.4343 5.48774 11.736 5.20385Z" fill="#F75000"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -314,7 +595,7 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal fade modal-xl modal-dialog-centered modal-lg:" id="staticBackdrop" data-bs-backdrop="static"
+        <!-- <div class="modal fade modal-xl modal-dialog-centered modal-lg:" id="staticBackdrop" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -332,19 +613,22 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
+        
     </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script>
+    <!-- <script>
 
 
 
@@ -387,7 +671,7 @@
 
         function callSpeakFunction() {
 
-            speak("Hello Gabriel. The month of July you’ve spent 252.500 BD or 78 % out of your 300.000 BD limit, your minimum amount due for this month is 6.320 BD and you can pay until 15.08.2024 that is in 8 days from now.");
+            // speak("Hello Gabriel. The month of July you’ve spent 252.500 BD or 78 % out of your 300.000 BD limit, your minimum amount due for this month is 6.320 BD and you can pay until 15.08.2024 that is in 8 days from now.");
         }
         var myModalEl = document.getElementById('staticBackdrop')
         myModalEl.addEventListener('hide.bs.modal', function (event) {
@@ -396,11 +680,7 @@
 
 
 
-    </script>
-
-
-
-
+    </script> -->
 
 </body>
 

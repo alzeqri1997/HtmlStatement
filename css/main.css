@@ -4,11 +4,23 @@ body {
 
 .main-body {
     height: 2010px;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: Inter;
     font-stretch: normal;
     text-decoration: none;
     height: auto;
+    position: relative;
+}
+
+.main-body::before {
+    content: "";
+    background: url(../assets/background-gradient.svg);
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    width: 75.92313rem;
+    height: 67.0625rem;
+    z-index: 0;
 }
 
 
@@ -114,12 +126,15 @@ body {
     flex-direction: column;
     background-color: rgba(255, 255, 255, 1);
     border: none;
-    margin-top: 5px;
+    margin-top: 1rem;
+}
+
+.card-details {
+    margin-top: 0.12rem;
 }
 
 .card-heading {
     color: rgba(0, 0, 0, 1);
-    height: auto;
     font-size: 24px;
     font-style: Medium;
     text-align: left;
@@ -128,6 +143,7 @@ body {
     line-height: 40px;
     font-stretch: normal;
     text-decoration: none;
+    margin-bottom: 1.5rem;
 }
 
 .card-text {
@@ -140,6 +156,7 @@ body {
     font-family: Inter;
     font-weight: 400;
     line-height: 32px;
+    margin-bottom: 1.5rem;
 
 
 }
@@ -183,7 +200,7 @@ body {
     gap: 8px;
 }
 
-.paynowButton {
+.primaryBtn {
     gap: 8px;
     width: 100%;
     display: flex;
@@ -194,7 +211,6 @@ body {
     background-color: rgb(247 80 0);
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
-    font-style: Semi Bold;
     text-align: left;
     font-weight: 700;
     line-height: 24px;
@@ -202,42 +218,78 @@ body {
     text-decoration: none;
 }
 
-.paynowButton:hover {
+.btn-lg{
+    max-width: 11rem;
+}
+
+.primaryBtn:hover {
     background-color: rgb(247 80 0);
     color: rgba(255, 255, 255, 1);
 }
 
-.remindMeLaterButton {
-    gap: 8px;
-    width: 100%;
-    display: flex;
-    padding: 12px 16px;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 8px;
-    justify-content: center;
-    background-color: rgb(237 228 223);
-    color: rgb(0 0 0);
-    font-size: 16px;
-    font-style: Semi Bold;
-    text-align: left;
-    font-weight: 700;
-    line-height: 24px;
-    font-stretch: normal;
-    text-decoration: none;
+.secondary-btn {
+    color: #F75000;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid rgba(237, 228, 223, 1);
+    border-radius: 0.5rem;
+    /* 171.429% */
 }
 
+.secondary-btn:hover {
+    border-color: rgba(237, 217, 207, 1) !important;
+    background-color: #FAF4F0 !important;
+    color: #F75000 !important;
+}
+
+.secondary-btn:active {
+    border-color: rgba(237, 217, 207, 1) !important;
+    background-color: #FAF4F0 !important;
+    color: #F75000 !important;
+}
+.third-btn {
+    color: #000;
+    background-color: rgba(237, 228, 223, 1);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    /* 171.429% */
+}
+
+.third-btn:hover {
+    background-color: rgba(237, 228, 223, 1) !important;
+    color: #000 !important;
+}
+
+.third-btn:active {
+    background-color: rgba(237, 228, 223, 1) !important;
+    color: #000 !important;
+}
+
+
+
+
+/* 
 .remindMeLaterButton:hover {
     background-color: rgb(237 228 223);
     color: rgb(0 0 0);
-}
+} */
 
 .main-information {
     gap: 24px;
     align-items: flex-start;
     border-radius: 16px;
     flex-direction: column;
-    background-image: linear-gradient(168deg, rgba(255, 245, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* background-image: linear-gradient(168deg, rgba(255, 245, 240, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+    background-color: white;
 }
 
 .information-box {
@@ -251,8 +303,11 @@ body {
 }
 
 .main-informationheading {
+    border-radius: 0.75rem;
+    ;
     gap: 8px;
     display: flex;
+    justify-content: space-between;
     padding: 8px;
     align-self: stretch;
     align-items: center;
@@ -271,12 +326,14 @@ body {
 
 .main-informationbody {
     display: flex;
-    padding: 24px;
+    padding: 1px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
     border-radius: 8px;
+    overflow: hidden;
+    /* background: linear-gradient(180deg, rgba(0, 163, 65, 0.49) 0%, rgba(255, 80, 80, 0.17) 100%); */
     background: linear-gradient(227deg, rgba(0, 43, 187, 0.65) 0%, rgba(156, 51, 18, 0.65) 100%), linear-gradient(0deg, #7E726A 0%, #7E726A 100%), #FFF;
     color: #FFF;
     font-family: Inter;
@@ -284,6 +341,17 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    overflow: hidden;
+}
+
+.main-informationbody-wrap {
+    border-radius: 6.5px;
+    /* background-color: white; */
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .green-text {
@@ -298,7 +366,7 @@ body {
 
 .main-rewards {
     display: flex;
-    padding: 16px;
+    padding: 1.5rem;
     overflow: hidden;
     align-self: stretch;
     align-items: flex-start;
@@ -317,16 +385,32 @@ body {
     line-height: normal;
 }
 
+.sidebar-sub-heading {
+    color: rgba(94, 94, 94, 1);
+}
+
 .rewards-body {
-    display: flex;
+    min-height: 104px;
+    padding: 1.5rem;
     overflow: hidden;
     position: relative;
     align-self: stretch;
     box-shadow: 10px 40px 64px 12px rgba(245, 240, 237, 0.05999999865889549);
     align-items: flex-start;
     border-radius: 12px;
-    background-color: rgba(100, 81, 157, 1);
+    background: linear-gradient(128deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%), #64519D;
     margin-top: 20px;
+
+}
+
+.background-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/background-card.svg');
+    z-index: 0;
 }
 
 .main-frame05 {
@@ -338,12 +422,10 @@ body {
 
 .txtBig {
     color: rgb(255 255 255);
-
     font-size: 24px;
     font-style: Bold;
-    text-align: left;
     font-weight: 700;
-    line-height: 32px;
+    /* line-height: 32px; */
 
 }
 
@@ -360,25 +442,16 @@ body {
 }
 
 .txtPosition {
-    gap: 4px;
-    padding-top: 24px;
-    padding-left: 22px;
+    gap: 16px;
     display: flex;
-    position: absolute;
+    justify-content: space-between;
     align-items: flex-start;
-    flex-direction: column;
 }
 
 .txtmini {
-
-    padding-top: 64px;
-    padding-left: 186px;
     color: rgba(255, 255, 255, 1);
-
-    position: absolute;
     font-size: 12px;
     font-style: Medium;
-    text-align: right;
     font-family: Inter;
     font-weight: 500;
     line-height: 20px;
@@ -401,7 +474,7 @@ body {
 
 .txt {
     color: rgba(247, 80, 0, 1);
-    font-size: 16px;
+    font-size: 0.9rem;
     font-style: Regular;
     text-align: left;
     font-weight: 400;
@@ -431,27 +504,50 @@ body {
     background-color: rgba(245, 240, 237, 1);
 }
 
-.claimOffer {
-    color: rgba(247, 80, 0, 1);
-    height: auto;
-    font-size: 16px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 24px;
-    font-stretch: normal;
+.RoundedImageBox {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 100%;
+    background-color: rgba(245, 240, 237, 1);
 }
+
+.transaction-date {
+    font-size: 0.75rem;
+    color: rgba(85, 85, 85, 1);
+}
+
+.transaction-badge {
+    background-color: rgba(188, 242, 206, 1);
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+.font-small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+
 
 .progress {
-    margin-top: 20px;
-    height: 50px;
+    margin-top: 0.5rem;
+    min-height: 50px;
+    /* padding: 0.5rem 0; */
 }
 
-.barText {
-    position: absolute;
-    padding-left: 12px;
+.progress-content {
+    margin: 0.5rem 0.75rem;
 }
+
 
 .barAmount {
     width: 100%;
@@ -466,34 +562,111 @@ body {
 }
 
 .nav-item {
-    background-color: rgb(237 228 223) !important;
-    border-radius: 10px;
-}
+    /* background-color: rgb(237 228 223) !important; */
+    border-radius: .5rem;
+    padding: 0.25rem;
 
-.nav-item a {
-    color: rgba(0, 0, 0, 1) !important;
 }
 
 .nav-link.active {
     color: rgba(247, 80, 0, 1) !important;
+    background-color: white !important;
+    border-color: transparent !important;
+    margin: 0 !important;
 }
 
-.nav-link.active span {
-    background: white;
-    padding: 6px;
-    border-radius: 10px;
-}
+.nav-link.active span {}
 
 
 .nav-link {
-    background-color: rgb(237 228 223) !important;
+    color: rgba(0, 0, 0, 1) !important;
+    background-color: transparent !important;
     font-size: 16px;
     text-align: right;
     font-weight: 600;
-    background-color: rgb(237 228 223) !important;
     border-radius: 0px;
+    background: white;
+    border-radius: 10px;
 }
 
-.nav-tabs .nav-link {
-    border-radius: 0px;
+.nav-tabs {
+    background-color: rgb(237 228 223) !important;
+    border-radius: 0.75rem !important;
+    width: fit-content;
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+/* .nav-tabs .nav-link {
+    border-radius: 0.75rem;
+} */
+
+.horizontal-divider {
+    background-color: white;
+    width: 1px;
+    height: 32px;
+}
+
+.vertical-divider {
+    background-color: #EDD9CF;
+    width: 100%;
+    height: 1px;
+    margin: 0.44rem 0;
+    border-radius: 100%;
+}
+
+.category-most-spent {
+    color: rgba(94, 94, 94, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.light-green {
+    color: rgba(7, 150, 64, 1);
+}
+
+.bg-progress-subtle-green {
+    background-color: rgba(198, 241, 218, 1);
+}
+
+.bg-progress-subtle-cyan {
+    background-color: rgba(204, 231, 255, 1);
+}
+
+.bg-progress-subtle-orange {
+    background-color: rgba(252, 222, 192, 1);
+}
+
+.bg-progress-subtle-grape {
+    background-color: rgba(237, 219, 255, 1);
+}
+
+.bg-progress-subtle-blue {
+    background-color: rgba(215, 228, 255, 1);
+}
+
+.bg-progress-subtle-coral {
+    background-color: rgba(240, 229, 224, 1);
+}
+
+
+.secondary {
+    color: rgba(94, 94, 94, 1);
+}
+
+.progress-title {
+    font-size: 1rem;
+}
+
+.progress-bar {
+    transition: all;
+}
+
+.body-background {
+    position: absolute;
+}
+
+.text-orange{
+    color: #F75000;
 }
