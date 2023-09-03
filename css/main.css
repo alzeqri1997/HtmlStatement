@@ -4,7 +4,7 @@ body {
 
 .main-body {
     height: 2010px;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: Inter;
     font-stretch: normal;
     text-decoration: none;
@@ -23,11 +23,11 @@ body {
     z-index: 0;
 }
 
-@media (max-width: 1200px) { 
-    .main-body::before{
+@media (max-width: 1200px) {
+    .main-body::before {
         display: none;
     }
- }
+}
 
 
 .page-heading {
@@ -224,7 +224,7 @@ body {
     text-decoration: none;
 }
 
-.btn-lg{
+.btn-lg {
     max-width: 11rem;
 }
 
@@ -257,6 +257,7 @@ body {
     background-color: #FAF4F0 !important;
     color: #F75000 !important;
 }
+
 .third-btn {
     color: #000;
     background-color: rgba(237, 228, 223, 1);
@@ -330,6 +331,28 @@ body {
 
 }
 
+.next,
+.prev {
+    border: none !important;
+    border-color: white !important;
+}
+
+.next:disabled,
+.prev:disabled {
+    opacity: 0.5 !important;
+}
+
+.next:focus,
+.prev:focus {
+    border: none !important;
+    border-color: white !important;
+}
+
+
+.swiper-disabled {
+    opacity: .5;
+}
+
 .main-informationbody {
     display: flex;
     padding: 1px;
@@ -348,6 +371,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     overflow: hidden;
+    /* margin-right: 16px; */
 }
 
 .main-informationbody-wrap {
@@ -358,6 +382,7 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5rem;
+
 }
 
 .green-text {
@@ -604,6 +629,15 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 992px) {
+    .nav-tabs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
 /* .nav-tabs .nav-link {
     border-radius: 0.75rem;
 } */
@@ -674,6 +708,41 @@ body {
     position: absolute;
 }
 
-.text-orange{
+.text-orange {
     color: #F75000;
+}
+
+.swiper {
+    width: 100%;
+    /* height: 300px; */
+}
+
+.credit-card-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1.31rem 1.5rem 1.4rem 1.5rem;
+    cursor: pointer;
+}
+
+.credit-card-number {
+    display: block;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: .44rem;
+    letter-spacing: 0.03rem;
+}
+
+.credit-card-name {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

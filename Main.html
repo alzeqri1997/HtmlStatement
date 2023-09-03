@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="main-body container">
+        <div class="row  header">
+            <div class="col-md-2">
+                <div class="main-logo">
+                    <img src="./assets/logo.png" alt="sohar">
+                </div>
+            </div>
+            <div class="col-md-8 header-heading-text">
+                <span>Interactive Statement</span> <span>July 2023</span>
+            </div>
+            <div class="col-md-2">
+                <button class="btn download-button">Download Button</button>
+            </div>
+        </div>
+        <div class="row  py-4">
+            <div class="col-md-12">
+                <div class="page-heading">
+                    <span>Welcome Gabriel!</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="main-card">
+                    <div class="card-heading">
+                        Monthly Summary
+                    </div>
+                    <div class="card-text ">The month of July you’ve spent <strong>252.500 BD</strong> or
+                        <strong>78%</strong> out of
+                        your <strong>300.000 BD</strong>
+                        limit, your minimum amount due for this month is
+                        <strong>6.320 BD</strong> and you can pay until <strong>15.08.2024</strong> that is in 8 days
+                        🌞⏳⏱️ from now.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        Your card details
+                    </div>
+                    <div class="card-text"><span class="txtNormal">Total spent</span><br>
+                        <span class="spentText">252.500 BD</span>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row gy-5">
+                                    <div class="col-md-6">
+                                        <div class="amountBox">
+                                            <span class="txtNormal">Credit limit</span>
+                                            <span class="txtAmount">300.000 BD</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="amountBox">
+                                            <span class="txtNormal">Available balance</span>
+                                            <span class="txtAmount">50.000 BD</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="amountBox">
+                                            <span class="txtNormal">Available cash limit</span>
+                                            <span class="txtAmount">10.000 BD</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="amountBox">
+                                            <span class="txtNormal">Minimum due</span>
+                                            <span class="txtAmount">6.000 BD</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn paynowButton">Pay Now</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn remindMeLaterButton">Remind me later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <img class="img-fluid rounded " src="./assets/creditCard.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardSpendingDetails">
+                    <div class="card-heading">Your spending details</div>
+
+                    <div id="tabscontent" class="container">
+
+
+                        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1"
+                                    role="tab" aria-controls="ex1-tabs-1" aria-selected="true"><span>By Category</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab"
+                                    aria-controls="ex1-tabs-2" aria-selected="false"><span>Transaction</span></a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="ex1-content">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                                aria-labelledby="ex1-tab-1">
+                                <div class="container tab-content" id="by-category">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success " role="progressbar" style="width: 30%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
+                                                class="barText">Entertainment<br><span>24 Transaction</span></span>
+
+                                        </div>
+                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 55%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span
+                                                class="barText">Grocery
+
+                                                <br><span>17 Transaction</span></span></div>
+                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span
+                                                class="barText">Medical
+
+                                                <br><span>17 Transaction</span></span></div>
+                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 27%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
+                                                class="barText">Car
+                                                Service
+
+                                                <br><span>8 Transaction</span></span></div>
+                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span
+                                                class="barText">Other
+
+                                                <br><span>20 Transaction</span></span></div>
+                                        <span class="barAmount">137.580 BD<br><span></span>47%</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                                <div class="container tab-content" id="transactions">
+                                    <table class="table">
+                                        <thead class="">
+                                            <tr>
+
+                                                <th scope="col">Date &Merchant</th>
+                                                <th scope="col">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>24/07/2023 <span>Careem</span></td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>25/07/2023 <span>Netflix</span></td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <td>23/07/2023 <span>Grandious</span></td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-information">
+                            <div class="information-box">
+                                <div class="main-informationheading">Did you know?</div>
+                                <div class="main-informationbody"><span>You can <span class="green-text">use Equated
+                                            Monthly
+                                            Installments (EMI)
+                                            conversion</span>, for transactions above <span class="white-text">BHD
+                                            1,500</span> on your
+                                        Credit Card and
+                                        make
+                                        hassle-free repayments.</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 py-4">
+                        <div class="main-rewards">
+
+                            <div class="rewards-header">
+                                <div class="sideBarHeading py-2">⭐️ Fidelity</div>
+                                <span class="">Congratulation! You
+                                    have
+                                    accumulated 2560 Points worth 25.60 BD</span>
+                            </div>
+
+                            <div class="rewards-body ">
+                                <div class="txtPosition">
+                                    <span class="txtBig">2560 Points</span>
+                                    <span class="txtSmall">25.60 BD</span>
+
+                                </div>
+                                <span class="txtmini">How to redeem your points?</span>
+                                <div class="main-frame-pasteyour-patternhere">
+                                    <div class="main-frame05">
+                                        <img alt="VectorI146" src="" class="main-vector156">
+                                        <img alt="VectorI146" src="./assets/vectori146-3qk4.svg" class="main-vector157">
+                                        <img alt="VectorI146" src="./assets/vectori146-voay.svg" class="main-vector158">
+                                    </div>
+                                </div>
+                                <img alt="Noise1466" src="./assets/noise1466-abwp-200h.png" class="main-noise1">
+
+                            </div>
+                            <div class="rewards-footer py-4">
+                                <button class="btn btnBrowseRewards">Browse all rewards</button>
+                                <span class="txt">How to win points</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+
+                        <div class="main-offers container">
+                            <div class="sideBarHeading py-2">Our offers for you?</div>
+                            <span>You have unlocked new rewards that we can use next month.</span>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <div class="imageBox"></div>
+                                </div>
+                                <div class="col-md-8 px-0">
+                                    <div>
+                                        <span class="py-2">Buy any item over 100 BD in any City Center malls in Bahrain
+                                            and win 10 BD
+                                            voucher to spend.</span>
+                                    </div>
+                                    <div class="claimOffer">Claim offer </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <div class="imageBox"></div>
+                                </div>
+                                <div class="col-md-8 px-0">
+                                    <div>
+                                        <span class="py-2">Get a free Meal for 2 at any Vox cinema across Bahrain</span>
+                                    </div>
+                                    <div class="claimOffer">Claim offer </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <div class="imageBox"></div>
+                                </div>
+                                <div class="col-md-8 px-0">
+                                    <div>
+                                        <span class="py-2">Earn bonus points on selected stores in City Center mall
+                                            across Bahrain.</span>
+                                    </div>
+                                    <div class="claimOffer">Claim offer </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" id="modelBtn" style="visibility: hidden;" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade modal-xl modal-dialog-centered modal-lg:" id="staticBackdrop" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/OfferModal.png" class="img-fluid rounded">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning">Lear More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+
+
+
+
+        AWS.config.update({
+            accessKeyId: "AKIA2EB3TL4WG7R53E53",
+            secretAccessKey: "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",
+            region: "us-east-1"
+        });
+        var polly = new AWS.Polly();
+        var audio = new Audio();
+
+        function speak(text) {
+            // Set up parameters for Polly
+            var params = {
+                OutputFormat: 'mp3',
+                Text: text,
+                VoiceId: 'Kendra'
+            };
+            // Request speech synthesis from Polly
+            polly.synthesizeSpeech(params, function (err, data) {
+                if (err) console.log(err, err.stack);
+                else {
+                    // Create audio element and play speech
+                    audio.pause();
+                    audio.src = "data:audio/mp3;base64," + data.AudioStream.toString('base64');
+                    audio.play();
+
+                }
+            });
+        }
+
+        setTimeout(openModal, 2000);
+
+
+        function openModal() {
+            $('#modelBtn').click()
+
+        }
+
+        function callSpeakFunction() {
+
+            speak("Hello Sameh, Welcome to your Sohar International interactive statement for July 2024");
+        }
+        var myModalEl = document.getElementById('staticBackdrop')
+        myModalEl.addEventListener('hide.bs.modal', function (event) {
+            setTimeout(callSpeakFunction, 1500);
+        });
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
