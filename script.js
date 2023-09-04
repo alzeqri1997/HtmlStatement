@@ -268,15 +268,15 @@ $(document).ready(function () {
     }
 
     function callSpeakFunction() {
-        const monthlySummary = `Welcome Gabriel!, The month of July you’ve spent 252,500 BD or 78% out of your 300,000 BD limit, your minimum amount due for this month is 6,320 BD and you can pay until 15.08.2024 that is in 8 days from now.`;
+        const monthlySummary = `Welcome Gabriel!, The month of July you’ve spent 252.500 BD or 78% out of your 300 BD limit, your minimum amount due for this month is 6.320 BD and you can pay until 15.08.2024 that is in 8 days from now.`;
         speak(`
         ${monthlySummary}
         Here are you card details:
-        - Total spent: 252,500 BD.
-        -Credit limit: 300,000 BD
-        - Available balance: 50,000 BD.
-        - Available cash limit: 10,000 BD.
-        - Minimum due: 6,000 BD.
+        - Total spent: 252.500 BD.
+        -Credit limit: 300 BD
+        - Available balance: 50 BD.
+        - Available cash limit: 10 BD.
+        - Minimum due: 6 BD.
         `);
     }
 
